@@ -1,8 +1,9 @@
 ---
 plan: morning-digest
-status: ready
+status: done
 owner: rook
 opened: 2026-10-29
+closed: 2026-10-29
 ---
 
 # Morning digest
@@ -77,3 +78,15 @@ page again with `LANE_MARKER` unset (the banner reads "no marker set") and uploa
 link. Move this plan to `docs/plans/done/` with its issue list.
 
 Done when: the preview link no longer shows the lane marker.
+
+## Issues
+
+| # | Issue | Blocked by | Worker | Closed |
+|---|-------|-----------|--------|--------|
+| 1 | Run log reader | — | OpenCode · gpt-6-luna · medium | 2026-10-29 |
+| 2 | Digest page: GET /digest/:night | #1 | OpenCode · gpt-6-luna · medium | 2026-10-29 |
+| 3 | Digest JSON: GET /api/digest/:night | #1 | OpenCode · gpt-6-luna · medium | 2026-10-29 |
+| 4 | Status board links to nightly digests | #1 | OpenCode · gpt-6-luna · medium | 2026-10-29 |
+| 5 | Digest page and API route tests | #1 | OpenCode · gpt-6-luna · medium | 2026-10-29 |
+| 6 | Publish the digest preview for review | #2–#5 | OpenCode · gpt-6-luna · medium | 2026-10-29 |
+| 7 | Remove the lane marker after review | #6 | OpenCode · gpt-6-luna · medium | 2026-10-29 |
