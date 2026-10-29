@@ -46,7 +46,7 @@ export function createApp(config: RigConfig = loadConfig()) {
 
   app.get('/digest/:night', (c) => {
     const night = c.req.param('night');
-    if (!/^\d{4}-\d{2}-\d{2}$/.test(night)) return c.notFound();
+    if (!/^[\w-]+$/.test(night)) return c.notFound();
 
     try {
       const digest = readNight(config.runsDir, night);
